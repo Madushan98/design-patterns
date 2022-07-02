@@ -5,6 +5,7 @@ import com.madushan.momento.History;
 import com.madushan.statePattern.Canvas;
 import com.madushan.statePattern.TextBox;
 import com.madushan.statePattern.Tool;
+import com.madushan.template.TransferMoney;
 
 public class Main {
 
@@ -31,14 +32,24 @@ public class Main {
 //          codeEditor.restore(history.removeCode());
 //          System.out.println(codeEditor.getText());
 
+//                  codeEditor.setText("c");
+//          codeEditor.restore(history.removeCode());
+//          codeEditor.restore(history.removeCode());
+//          System.out.println(codeEditor.getText());
 
 
 
+        // template attern
+
+         var task = new TransferMoney();
+         task.record();
     }
 
-    private static  void drawUIControl(Tool tool){
-        tool.mouseDrag();
+    // state pattern
 
-    }
+//    private static  void drawUIControl(Tool tool){
+//        tool.mouseDrag();
+//
+//    }
 
 }
