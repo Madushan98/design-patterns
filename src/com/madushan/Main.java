@@ -1,5 +1,6 @@
 package com.madushan;
 
+import com.madushan.Factory.ProdiuctsController;
 import com.madushan.momento.CodeEditor;
 import com.madushan.momento.History;
 import com.madushan.observer.Chart;
@@ -13,13 +14,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // state pattern
+
+// state pattern
+
 //        var canvas = new Canvas();
 //        canvas.setTool(new TextBox());
 //        canvas.mousUp();
 
 
-        //momento pattern
+//momento pattern
 
 //          var codeEditor = new CodeEditor();
 //          var history = new History();
@@ -34,20 +37,19 @@ public class Main {
 //          codeEditor.restore(history.removeCode());
 //          System.out.println(codeEditor.getText());
 
-//                  codeEditor.setText("c");
+//          codeEditor.setText("c");
 //          codeEditor.restore(history.removeCode());
 //          codeEditor.restore(history.removeCode());
 //          System.out.println(codeEditor.getText());
 
 
-
-        // template pattern
+//template pattern
 
 //         var task = new TransferMoney();
 //         task.record();
 
 
-        // Observer pattern
+//Observer pattern
 
 //        var observer = new DataSource();
 //        var observable = new Chart();
@@ -58,16 +60,21 @@ public class Main {
 //        System.out.println(observable.getValue());
 
 
+//Factory Pattern
+
+          var  controller = new ProdiuctsController();
+          controller.listProducts();
+
+
+
     }
 
-    // state pattern
+// state pattern
 
 //    private static  void drawUIControl(Tool tool){
 //        tool.mouseDrag();
 //
 //    }
-
-
 
 
 }
