@@ -1,14 +1,13 @@
 package com.madushan.statePattern;
 
-public class TextBox implements   Tool{
+public class TextBox implements Tool {
     @Override
-   public void mouseDrag() {
+    public void mouseDrag() {
 
     }
 
-
     @Override
     public void mouseUp() {
-       System.out.print("mouseUp");
+        System.out.print("TextBox mouseUp");
     }
 }
