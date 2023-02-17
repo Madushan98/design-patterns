@@ -3,8 +3,7 @@ package com.madushan.statePattern;
 public class Canvas {
     private Tool tool ;
 
-
-    public  void mousUp(){
+    public  void mouseUp(){
         tool.mouseUp();
     }
 
