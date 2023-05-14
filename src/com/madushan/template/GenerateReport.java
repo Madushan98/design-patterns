@@ -1,10 +1,12 @@
 package com.madushan.template;
 
+import com.madushan.utils.CustomLogger;
+
 public class GenerateReport extends  Task {
 
     @Override
     protected  void doExecute() {
 
-        System.out.println("Generate Report");
+        CustomLogger.info("Generate Report");
     }
 }

@@ -1,10 +1,11 @@
 package com.madushan.template;
 
-public class TransferMoney extends  Task{
+import com.madushan.utils.CustomLogger;
 
+public class TransferMoney extends  Task{
 
     @Override
     protected void doExecute() {
-        System.out.println("Transfer  Money");
+        CustomLogger.info("Transfer  Money");
     }
 }

@@ -8,13 +8,13 @@ public abstract class Task {
         this.auditTrail = new AuditTrail();
     }
 
-    public  Task(AuditTrail auditTrail){
+    protected   Task(AuditTrail auditTrail){
         this.auditTrail = auditTrail;
     }
 
-    public void  record(){
-        auditTrail.record();
-     doExecute();
+    public void  recordAuditTrail(){
+        auditTrail.recordAuditTrail();
+        doExecute();
     }
 
     protected abstract  void  doExecute();

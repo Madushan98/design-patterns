@@ -1,9 +1,10 @@
 package com.madushan.template;
 
+import com.madushan.utils.CustomLogger;
+
 public class AuditTrail {
 
-    public void record(){
-        System.out.println("Audit");
-
+    public void recordAuditTrail(){
+        CustomLogger.info("Audit");
     }
 }
